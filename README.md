@@ -1,26 +1,54 @@
-# Getir Node.js Bootcamp Graduation Project
-## The Challenge
-We’d like you to create a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the results in the requested format.
-Requirements
-- The code should be written in Node.js using express framework
-- The endpoint should just handle HTTP POST requests.
-- The application should be deployed on AWS or Heroku. You don’t need to use any API Gateway, Load Balancers or any other layer than the developed application.
-- The up to date repo should be publicly available in Github, Bitbucket or equivalent.
+<h1 align="center">Welcome to getir-nodejs-bootcamp-graduation-project-mahiruslu 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu/blob/master/LICENSE" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/github/license/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu" />
+  </a>
+</p>
 
-## Deliverables
-- The public repo URL which has the source code of the project, and a set of instructions if there is any project specific configurations needed to run the project.
-- The public endpoint URL of the deployed API which is available for testing.
+> We’d like you to create a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the results in the requested format. Requirements - The code should be written in Node.js using express framework - The endpoint should just handle HTTP POST requests. - The application should be deployed on AWS or Heroku. You don’t need to use any API Gateway, Load Balancers or any other layer than the developed application. - The up to date repo should be publicly available in Github, Bitbucket or equivalent.
 
-## Worth Highlighting
-We expect these requirements can be delivered in 3 to 6 hours. However, it is not a speed test. Take your time! Your feedback on how much actual time you were needed to deliver the task will be very helpful but will not be used for the evaluation.
-You are free to use any libraries to deliver the needed functionality, but be prepared to explain other solutions that you would have implemented if you have more time.
+### 🏠 [Homepage](https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu#readme)
 
-## Crucial Points
-- Delivering a Working RESTful API.
-- Clean and Production Ready Code
-- Error Handling
-- Comments and Documentation
-- Unit and/or Integration Tests (Jest is preferable but Mocha also works)
-- Avoid Over Engineering
+## Install
 
-Good luck with this assignment! Try to make good use of this task to demonstrate and show off your coding skills. If you have any questions, don’t hesitate to ask your contact person within Getir.
+```sh
+npm install
+```
+
+## Usage
+
+```sh
+npm run start
+```
+
+## Run tests
+
+```sh
+npm run test
+```
+
+## Author
+
+* Github: [@getir-nodejs-bootcamp](https://github.com/getir-nodejs-bootcamp)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu/issues). You can also take a look at the [contributing guide](https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu/blob/master/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+This project is [ISC](https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
