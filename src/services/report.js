@@ -1,7 +1,7 @@
 const data = require('../models/data');
 
-const list = (dateStart,dateEnd,minCount,maxCount) => {
-    return data.find({});
+const list = (startDate,endDate,minCount,maxCount) => {
+    return data.find({createdAt: {$gte: startDate, $lte: endDate}, count: {$gte: minCount, $lte: maxCount}});
 }
 
 module.exports  = {

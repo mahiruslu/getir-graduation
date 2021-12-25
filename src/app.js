@@ -9,6 +9,7 @@ const port = process.env.AP_PORT || 5000;
 config();
 loader();
 
+app.use(express.json());
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
