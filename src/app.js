@@ -18,7 +18,7 @@ app.listen(port, () => {
     app.use('/api/report', ReportRouter);
 
     app.use((err, req, res, next) => {        
-        next(new ApiError(err.message, 500));
+        next(err);
     });
     app.use(errorHandler);
 });

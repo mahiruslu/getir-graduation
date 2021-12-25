@@ -8,6 +8,7 @@ const getReport = (req, res, next) => {
      .then(data => {
          if(data.length == 0) return next(new ApiError('No data found', hs.NOT_FOUND));
          
+         //the result also wanted format from Getir. records is the array of objects
          res.status(hs.OK).json(
                 {
                     "code": "0",
