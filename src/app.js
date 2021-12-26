@@ -41,3 +41,5 @@ app.listen(port, () => {
     //if there is any error triggers the error handler middleware
     app.use(errorHandler);
 });
+
+module.exports = app;
