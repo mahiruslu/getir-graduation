@@ -2,7 +2,6 @@ const hs = require('http-status');
 const {list} = require('../services/report');
 const ApiError = require("../errors/ApiError");
 
-
 const getReport = (req, res, next) => {
      list(req.body.startDate, req.body.endDate, req.body.minCount, req.body.maxCount)
      .then(data => {
