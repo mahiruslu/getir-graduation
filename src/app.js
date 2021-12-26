@@ -17,8 +17,10 @@ app.listen(port, () => {
     console.log(`Listening on port ${port}`)
     app.use('/api/report', ReportRouter);
 
-    app.use((err, req, res, next) => {        
-        next(err);
+    //this runs if the EP is not found
+    app.use((req, res, next) => {     
+        next(new ApiError(`${req.method} ${req.path} endpoint not avaiable`, 404));
     });
+    //if there is any error triggers the error handler middleware
     app.use(errorHandler);
 });
