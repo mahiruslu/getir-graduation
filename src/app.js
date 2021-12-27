@@ -12,7 +12,7 @@ const fs = require('fs');
 
 
 const app = express();
-const port = process.env.AP_PORT || 5000;
+const port = process.env.PORT || 5000;
 
 config();
 loader();
