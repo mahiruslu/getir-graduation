@@ -7,14 +7,11 @@
   <a href="https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu/blob/master/LICENSE" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/github/license/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu" />
-  </a>
 </p>
 
-> We’d like you to create a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the results in the requested format. Requirements - The code should be written in Node.js using express framework - The endpoint should just handle HTTP POST requests. - The application should be deployed on AWS or Heroku. You don’t need to use any API Gateway, Load Balancers or any other layer than the developed application. - The up to date repo should be publicly available in Github, Bitbucket or equivalent.
-
 ### 🏠 [Homepage](https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu#readme)
+
+# Api Reference
 
 ## Install
 
@@ -34,21 +31,49 @@ npm run start
 npm run test
 ```
 
+## Url
+https://getir-graduation-mahiruslu.herokuapp.com/
+
+## Endpoints
+
+```sh
+Method: POST /api/report
+```
+
+### Post parameters to the endpoint
+
+| Parameter  | Type  | Desc / Format |
+| :------------ |:---------------:| -----:|
+| startDate      | String | Start Date (YYYY-MM-DD) |
+| endDate      | String        |  End Date (YYYY-MM-DD) |
+| minCount | Number        |    Minimum count value |
+| maxCount | Number        |    Maximum count value |
+
+## Returning Format
+`{
+    "code": "0",
+    "msg": "Success",
+    "records": [
+        {
+            "key": "TAKwGc6Jr4i8Z487",
+            "value": "Getir Task",
+            "count": 310
+        }
+    ]
+}`
+
+| Parameter | Values |  Description |
+| :------------ |:---------------:| -----:|
+| code      | 0,4,5  | Result code. 0 means success |
+| msg      | Success,Error    | Short result message |
+| records | ...  | If everthing is ok, returns record datas. |
+| details | ...  | If there is any error, returns error message. |
+
 ## Author
 
-* Github: [@getir-nodejs-bootcamp](https://github.com/getir-nodejs-bootcamp)
+* Github: [@mahiruslu](https://github.com/mahiruslu)
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu/issues). You can also take a look at the [contributing guide](https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu/blob/master/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
 This project is [ISC](https://github.com/getir-nodejs-bootcamp/getir-nodejs-bootcamp-graduation-project-mahiruslu/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
